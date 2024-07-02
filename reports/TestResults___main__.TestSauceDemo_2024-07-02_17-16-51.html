@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-07-02 17:16:51</p>
+                <p class='attribute'><strong>Duration: </strong>7.17 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestSauceDemo</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">view_item_detailPage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".inventory_details_name large_size"}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x000000010889b0e8 chromedriver + 5169384
+1   chromedriver                        0x0000000108892fba chromedriver + 5136314
+2   chromedriver                        0x000000010840f36c chromedriver + 402284
+3   chromedriver                        0x000000010845c740 chromedriver + 718656
+4   chromedriver                        0x000000010845ca01 chromedriver + 719361
+5   chromedriver                        0x00000001084a1bc4 chromedriver + 1002436
+6   chromedriver                        0x000000010847fadd chromedriver + 862941
+7   chromedriver                        0x000000010849ef57 chromedriver + 991063
+8   chromedriver                        0x000000010847f853 chromedriver + 862291
+9   chromedriver                        0x000000010844f5c6 chromedriver + 665030
+10  chromedriver                        0x000000010844fe4e chromedriver + 667214
+11  chromedriver                        0x000000010885dd00 chromedriver + 4918528
+12  chromedriver                        0x0000000108862cfd chromedriver + 4939005
+13  chromedriver                        0x00000001088633d5 chromedriver + 4940757
+14  chromedriver                        0x000000010883ede4 chromedriver + 4791780
+15  chromedriver                        0x00000001088636c9 chromedriver + 4941513
+16  chromedriver                        0x00000001088305b4 chromedriver + 4732340
+17  chromedriver                        0x0000000108883898 chromedriver + 5073048
+18  chromedriver                        0x0000000108883a57 chromedriver + 5073495
+19  chromedriver                        0x0000000108892b6e chromedriver + 5135214
+20  libsystem_pthread.dylib             0x00007ff813a8818b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff813a83ae3 thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/acsah/pythonTutorial/selenium/Assignments_selenium/sauceDemoLoginClass.py", line 161, in view_item_detailPage
+    item_name_details_page= self.driver.find_element(By.CLASS_NAME,"inventory_details_name large_size").text
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".inventory_details_name large_size"}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x000000010889b0e8 chromedriver + 5169384
+1   chromedriver                        0x0000000108892fba chromedriver + 5136314
+2   chromedriver                        0x000000010840f36c chromedriver + 402284
+3   chromedriver                        0x000000010845c740 chromedriver + 718656
+4   chromedriver                        0x000000010845ca01 chromedriver + 719361
+5   chromedriver                        0x00000001084a1bc4 chromedriver + 1002436
+6   chromedriver                        0x000000010847fadd chromedriver + 862941
+7   chromedriver                        0x000000010849ef57 chromedriver + 991063
+8   chromedriver                        0x000000010847f853 chromedriver + 862291
+9   chromedriver                        0x000000010844f5c6 chromedriver + 665030
+10  chromedriver                        0x000000010844fe4e chromedriver + 667214
+11  chromedriver                        0x000000010885dd00 chromedriver + 4918528
+12  chromedriver                        0x0000000108862cfd chromedriver + 4939005
+13  chromedriver                        0x00000001088633d5 chromedriver + 4940757
+14  chromedriver                        0x000000010883ede4 chromedriver + 4791780
+15  chromedriver                        0x00000001088636c9 chromedriver + 4941513
+16  chromedriver                        0x00000001088305b4 chromedriver + 4732340
+17  chromedriver                        0x0000000108883898 chromedriver + 5073048
+18  chromedriver                        0x0000000108883a57 chromedriver + 5073495
+19  chromedriver                        0x0000000108892b6e chromedriver + 5135214
+20  libsystem_pthread.dylib             0x00007ff813a8818b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff813a83ae3 thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 7.17 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
